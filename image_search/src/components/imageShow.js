@@ -1,9 +1,11 @@
 
+import "./imageList.css"
 
-
-function ImageShow() {
+function ImageShow({ image }) {
     return (
-        <div>App</div>
+        <div>
+            <img src={image.urls.small} alt={image.alt_description} />
+        </div>
     )
 }
 

@@ -1,9 +1,14 @@
+import ImageShow from "./imageShow"
+import "./imageList.css"
 
 
+function ImageList({ images }) {
+    const renderedImages = images.map((image) => {
+        return <ImageShow key={image.id} image={image} />
+    })
 
-function ImageList() {
     return (
-        <div>App</div>
+        <div className="image-list">{renderedImages}</div>
     )
 }
 
